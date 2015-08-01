@@ -22,4 +22,5 @@ EXPOSE 	8080 6667 6697
 VOLUME	["/znc-data"]
 
 # this command starts znc and points it at the mounted volume for it's config
-CMD znc -f -d /znc-data
+#CMD znc -f -d /znc-data
+CMD for ((i = 0; ; i++)); do echo "$i: $(date)"; sleep 1; done
